@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert Eelement in Array Using For loop and Without for loop</title>
+</head>
+
+<body>
+    <p>Insert Element in Array</p>
+    <script>
+        let Data = [10, 2, 20, 30, 40, 50];
+        let newEl = 60;
+        let position = 2;
+        for (let i = Data.length - 1; i >= 0; i--) {
+            if (i >= position) {
+                Data[i + 1] = Data[i]
+                if (i == position) {
+                    Data[i] = newEl
+                }
+            }
+        }
+        console.log(Data)
+        //Here is the Second Method to insert the Data inside the for loop
+        let myData=[1,2,3,5,6,7,8]
+        let newElement=4
+        let result=myData.splice(3,0,newElement)
+        //here splice(IndexPositon,DeleteItem,Vlues to insert)
+        console.log(myData)
+        //Basically it's js methods
+    </script>
+</body>
+
+</html>
