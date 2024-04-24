@@ -30,6 +30,23 @@
         console.log(myData)
         //Basically it's js methods
     </script>
+    <script>
+        //insert the one string inside the array
+        let names=["adarsh","rohit","akash","prithviraj","yuvraj"]
+        let newName="raj";
+        let pos=1;
+         for(let i=names.length-1;i>=0;i--){
+            document.write(`${names[i]}<br/>`)
+            if(i>=pos){
+                names[i + 1]=names[i]
+                if(i===pos){
+                   names[i]=newName;
+                }
+            }
+         }
+document.write(names)
+console.log(names)
+</script>
 </body>
 
 </html>
